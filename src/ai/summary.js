@@ -6,7 +6,7 @@ export async function generateSummary(text) {
   if (!text || text.trim() === "") return "No content to summarize";
 
   try {
-    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash-lite" });
 
     const prompt = `Please provide a concise summary of the following blog post in 2-3 sentences, capturing the main points and key ideas:
 
