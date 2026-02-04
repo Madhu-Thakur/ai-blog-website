@@ -6,7 +6,7 @@ export async function getReadability(text) {
   if (!text || text.trim() === "") return "No content to analyze";
 
   try {
-    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash-lite" });
 
     const prompt = `Analyze the readability of the following text. Provide a concise assessment including:
 1. Overall reading level (e.g., elementary, middle school, high school, college level)
